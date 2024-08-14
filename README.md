@@ -1,4 +1,4 @@
-# In Game Tile Controller
+# Runtime Tile Controller
 
 This is some code I've written for a mobile game I'm working on. I left the controls mouse based because I plan on implementing it more specifically in my own project to better work thematically.
 
@@ -25,9 +25,9 @@ Dropping the `TilemapManager` into the Grid that holds the Tilemaps you can then
 
 ### TileRoomProperty
 
-This defines if the tilemap object is a `Floor` or `Wall`, allowing for the TilemapObjectProperty to Identify it. 
+This defines if the tilemap object is a `Floor` or `Wall`, allowing for the TilemapObject to Identify it. 
 
-### TilemapObjectProperty
+### TilemapObject
 
 Here you can define all of the Tile Object's Properties that include:
 
@@ -37,13 +37,10 @@ Here you can define all of the Tile Object's Properties that include:
 
 - If it can be placed on the Floor/Wall
 - If it's allowed to be placed under Furniture (used for Furniture Objects Ideally)
-- If it can be walked over **(Unimplemented)**
-- Has Collision **(Unimplemented)**
+- Should be treated as though it Has Collision
 - The placement offset 
     - There may be a better way to do this, but the Tilemaps don't always align correctly due to their inconsistent shape. You can make slight adjustments to objects to fix this.
 - Minor Adjustment Increment (For the Minor Adjustment Movement mode)
-
-> This object is overloaded currently and also controls detection of other objects/rooms.
 
 ### TilemapSaveData & TilemapSaveManager
 I used EasySave3 for the saving implementation, but you can use whatever you see fit. 

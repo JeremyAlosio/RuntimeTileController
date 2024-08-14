@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2810627781313365234}
+  - component: {fileID: 3877120325522398806}
   - component: {fileID: 3555132465748326635}
   - component: {fileID: 7752712524808229859}
-  - component: {fileID: 3877120325522398806}
   - component: {fileID: 4046433092170164249}
   - component: {fileID: 2115251841982470276}
   m_Layer: 0
@@ -36,6 +36,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3877120325522398806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025227569423194823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39da7093fdd40a147bca3c48994e791b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemTypeValue: 0
+  CanBePlacedOnFloor: 1
+  CanBePlacedOnWall: 0
+  CanBePlacedUnderFurniture: 1
+  HasCollision: 0
+  PlacementOffset: {x: 0.5, y: 0, z: 0}
+  MinorAdjustmentIncrement: 0.001
 --- !u!1839735485 &3555132465748326635
 Tilemap:
   m_ObjectHideFlags: 0
@@ -223,26 +242,6 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!114 &3877120325522398806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4025227569423194823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39da7093fdd40a147bca3c48994e791b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemType: 0
-  canBePlacedOnFloor: 1
-  canBePlacedOnWall: 0
-  canBePlacedUnderFurniture: 1
-  canBeWalkedOver: 0
-  hasCollision: 0
-  placementOffset: {x: 1, y: 0, z: 0}
-  minorAdjustmentIncrement: 0.001
 --- !u!19719996 &4046433092170164249
 TilemapCollider2D:
   m_ObjectHideFlags: 0

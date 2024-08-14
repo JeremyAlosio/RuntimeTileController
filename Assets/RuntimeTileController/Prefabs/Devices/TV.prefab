@@ -48,14 +48,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39da7093fdd40a147bca3c48994e791b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 1
-  canBePlacedOnFloor: 1
-  canBePlacedOnWall: 0
-  canBePlacedUnderFurniture: 0
-  canBeWalkedOver: 0
-  hasCollision: 0
-  placementOffset: {x: 0.5, y: 0.5, z: 0}
-  minorAdjustmentIncrement: 0.001
+  ItemTypeValue: 1
+  CanBePlacedOnFloor: 1
+  CanBePlacedOnWall: 0
+  CanBePlacedUnderFurniture: 0
+  CanBeWalkedOver: 0
+  HasCollision: 0
+  PlacementOffset: {x: 0.5, y: 0.5, z: 0}
+  MinorAdjustmentIncrement: 0.001
 --- !u!114 &1544948201546429487
 MonoBehaviour:
   m_ObjectHideFlags: 0

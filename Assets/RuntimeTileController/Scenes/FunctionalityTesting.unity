@@ -2109,26 +2109,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1873950394}
     m_Modifications:
-    - target: {fileID: 1065681934477890038, guid: 4305e974e1eff9d459bd153004deabc3, type: 3}
-      propertyPath: itemType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1065681934477890038, guid: 4305e974e1eff9d459bd153004deabc3, type: 3}
-      propertyPath: placementOffset.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1065681934477890038, guid: 4305e974e1eff9d459bd153004deabc3, type: 3}
-      propertyPath: placementOffset.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1065681934477890038, guid: 4305e974e1eff9d459bd153004deabc3, type: 3}
-      propertyPath: canBePlacedOnFloor
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1065681934477890038, guid: 4305e974e1eff9d459bd153004deabc3, type: 3}
-      propertyPath: minorAdjustmentIncrement
-      value: 0.001
-      objectReference: {fileID: 0}
     - target: {fileID: 4179361668820000831, guid: 4305e974e1eff9d459bd153004deabc3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

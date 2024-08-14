@@ -5,23 +5,23 @@ public class DebugMenu : MonoBehaviour
 {
     public TextMeshProUGUI text;
 
-    private void OnEnable()
+    void OnEnable()
     {
-        // Subscribe to the static event in TileObjectProperty
-        TileObjectProperty.TileObjectSelected.AddListener(OnTileObjectSelected);
+        // Subscribe to the static event in TileObject
+        TileObject.TileObjectSelected.AddListener(OnTileObjectSelected);
     }
 
-    private void OnDisable()
+    void OnDisable()
     {
-        // Unsubscribe from the static event in TileObjectProperty
-        TileObjectProperty.TileObjectSelected.RemoveListener(OnTileObjectSelected);
+        // Unsubscribe from the static event in TileObject
+        TileObject.TileObjectSelected.RemoveListener(OnTileObjectSelected);
     }
 
     // This function will be called when a tile object is selected
-    private void OnTileObjectSelected()
+    void OnTileObjectSelected()
     {
         // Get the currently selected object
-        GameObject selectedObject = TileObjectProperty.GetCurrentlySelectedObject();
+        GameObject selectedObject = FindObjectOfType<TilemapManager>().CurrentlySelectedObject; //Sorry I'm lazy it's a fuckin Debug 
 
         if (selectedObject != null)
         {
